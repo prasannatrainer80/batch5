@@ -1,0 +1,205 @@
+
+
+
+
+1) Web Applications
+
+   -> HTML 5
+
+   -> CSS 3
+
+   -> JavaScript
+
+   -> Jquery
+
+   -> BootStrap 
+
+________________________________________________________________________________________________
+
+WebApplication : These are the applications, that which are to be called from various places rather than where
+they are created. 
+
+If you want to make any distributed or enterprise apps then we need the help of web apps. 
+
+
+You can create web applications in 2 ways as
+
+(i) Scripting Languages
+
+(ii) Programming Languages 
+
+What is the difference between scripting languages and programming languages ???
+
+Scripting languages are languages that which are interpred, during runtime they takes lot of time to execute. 
+
+Programming languages are languages that which are compiled first, during runtime they takes very less time to execute. 
+
+In Web applications, we can implement 
+
+
+(i) Client-Side 
+
+	Enables you to access the application from the client-system
+
+	No Network traffic
+
+	Execution will be faster 
+
+(ii) Server-Side 
+
+	Enables you to access the application from the server-system
+
+	Network traffic is high
+
+	A bit slower. 
+
+
+*** Any intranet based application w.r.t. No Security, please opt for client-side scripting ***
+
+*** Any internet based application w.r.t. min. security, please opt for both client-side/server-side scripting ***
+
+*** Any internet based application w.r.t. High security, please opt for server side scripting only ***
+
+
+HTML (HyperText Markup Language) Which used to create any sample web pages. 
+
+How to start with HTML, 
+
+You can start html, using <html> </html> 
+
+
+<head> </head> : Contains global content for the given page. 
+
+<title> </title> : Used to display heading on title bar. 
+
+<body>
+</body> : Contains the actual content for the given page. 
+
+<pre> : This tag allows you to display content in predefined format. 
+
+<p> : This tag allows you to start content with new paragraph always. 
+
+<dl> Used to start definition language. 
+
+<dt> :Definition Term
+
+<dd> : Definition Descripition.
+
+To add the image to the given page, we need
+
+<img src="image_name" height width /> 
+
+Anchor Tag allows you to make link for internal or external pages. 
+
+syntax : 
+________
+
+<a href="Target_Page">Display Text</a>
+
+ol -> Ordered List used to display list of items in ordered format. 
+
+li -> List Item represents data. 
+
+ul -> Unordered List. 
+
+
+Forms : Allows you to implement interactive programming, as accept the data
+from the keyboard. 
+
+You can define forms as
+
+<form>
+</form> 
+
+The mandetory attribute you need to specify in forms is name.
+
+<form name="frmData">
+</form>
+
+Various controls in forms. 
+
+TextBox : 
+<input type="text" /> 
+
+Number : 
+<input type="number" />
+
+checkbox :
+
+<input type="checkbox" /> 
+
+Date : 
+<input type="date"/>
+
+Time : 
+<input type="time"/>
+
+Email : 
+<input type="email" /> 
+
+
+For actions, we need 
+
+<input type="button" /> 
+
+<input type="submit" /> 
+
+<input type="reset" /> : Clears the form data. 
+
+placeholder : Used to display water mark text on the given control. 
+
+required : Ensures any control data to be entered mandetorily, then we need required attribute. 
+
+If you want to make group of controls, then we need the help of fieldset tag. It contains another tag known as legend. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
