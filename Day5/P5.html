@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <script>
+            function showTime() {
+                var obj = new Date();
+                var msg ="";
+                msg+=obj.getHours() + ":" +obj.getMinutes() + ":" +obj.getSeconds();
+                document.getElementById("msg").innerHTML = msg;
+            }
+        </script>
+    </head>
+<body onload="showTime()">
+    <span id="msg"></span>
+</body>
+</html>
