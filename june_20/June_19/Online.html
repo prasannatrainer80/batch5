@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <link type="text/css" rel="stylesheet" href="Online.css" />
+        <script type="text/javascript" src="Online.js"></script>
+    </head>
+<body onload="loadQuestion()">
+    <p class="title">Online Exam @ Sonix</p>
+    <div class = "MainForm" align = "Left" >		
+        <br/><br/>
+        <form name = "ExamForm" id = "inputForm1" action = "" method = "GET">
+                <p id="Question">
+                    This is the question
+                </p>
+                <input type = "radio" name = "OptionR" id = "Opt1" onchange="AnswerChoosed(1)" />
+					<label id = "Option0" name = "Name1" >1st Option</label><br />
+					<input type = "radio" name = "OptionR" id = "Opt2" onchange="AnswerChoosed(2)" /> 
+					<label id = "Option1">2nd Option</label><br />
+					<input type = "radio" name = "OptionR" id = "Opt3" onchange="AnswerChoosed(3)" /> 
+					<label id = "Option2">3rd Option</label><br />
+					<input type = "radio" name = "OptionR" id = "Opt4" onchange="AnswerChoosed(4)" /> 
+					<label id = "Option3">4th Option</label><br />
+					<br />
+					<br />
+					<input type = "button" value = "Next" onclick="nextQuestion()" />
+
+        </form>
+    </div>
+</body>
+</html>
