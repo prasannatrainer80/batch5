@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <script>
+            var students = [
+                "Aishwarya","Ammar","Bhaveen","Ashwini","Nagaraju"
+            ];
+            var managers = [
+                "Siddharthi","RajLakshmi","Prasanna","Salar","Mythri"
+            ];
+        </script>
+    </head>
+<body>
+    <form name="frmLeave">
+        <table border="3" align="center">
+            <tr>
+                <th colspan="2">Leave Application Form</th>
+            </tr>
+            <tr>
+                <th>Employ Name</th>
+                <td>
+                    <select name="employ">
+                        <option value="Select Employ">Select Employ</option>
+                        <script>
+                            for(var v in students) {
+                                document.writeln("<option value='"+students[v] + "'>" +students[v] + "</option>");
+                            }
+                        </script>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th>Manager Name</th>
+                <td>
+                    <select name="manager">
+                        <option value="Select Manager">Select Manager</option>
+                            <script>
+                                for(var v in managers) {
+                                    document.writeln("<option value='"+managers[v] + "'>" +managers[v] + "</option>");
+                                }
+                            </script>
+                        </option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
