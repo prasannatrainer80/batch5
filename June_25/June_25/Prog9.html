@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <script>
+             employs = [
+                {empno:1,name:'Rajitha',basic:52344},
+                {empno:2,name:'Nagaraju',basic:90032},
+                {empno:3,name:'Uday',basic:87732},
+                {empno:4,name:'Hyma',basic:87742},
+                {empno:5,name:'Pavan',basic:78832},
+            ];
+            const show = () => {
+                var res="";
+                var table = document.getElementById("tab1");
+            //or use :  var table = document.all.tableid;
+
+            for(var i = table.rows.length - 1; i > 0; i--)
+            {
+                table.deleteRow(i);
+            }
+                employs.forEach(emp => {
+                        // alert(emp.empno);
+                       var tr = document.createElement("tr");
+                        tr.innerHTML = '<td>' +emp.empno + "</td>"
+                            +"<td>" +emp.name + "</td>" 
+                            +"<td>" +emp.basic + "</td>";
+                    // document.getElementById("tab1").conte
+                    
+                    document.getElementById("tab1").appendChild(tr);
+                    
+            });               
+
+            };
+            add = (empno,name,basic) => {
+                empRec = {};
+                empRec.empno = empno;
+                empRec.name = name;
+                empRec.basic = basic;
+                // alert(empRec);
+                employs.push(empRec);
+                //  alert(employs.length);
+                //  var table = document.getElementById ("tab1");
+                // document.getElementById("tab1").refresh();
+                //  alert(table);
+                show();
+            };
+        </script>
+    </head>
+<body onload="show()">
+    <form method="get" name="frmEmp" 
+        action="javascript:add(frmEmp.empno.value,frmEmp.name.value,frmEmp.basic.value)">
+        Employ No : 
+        <input type="number" name="empno" /> <br/><br/>
+        Employ Name : 
+        <input type="text" name="name" /> <br/><br/>
+        Basic : 
+        <input type="number" name="basic" /> <br/><br/>
+        <input type="submit" value="Add Employ" />
+    </form>
+    <table border="3" align="center" id="tab1">
+        <tr>
+            <th>Employ No</th>
+            <th>Employ Name</th>
+            <th>Basic</th>
+        </tr>
+    </table>
+</body>
+</html>
