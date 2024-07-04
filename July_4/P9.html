@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+        <script>
+            $(document).ready(function() {
+                $("#mult").click(function() {
+                    var firstNo, secondNo, result;
+                    firstNo = $("#firstNo").val();
+                    secondNo = $("#secondNo").val();
+                    result = firstNo * secondNo;
+                    $("#result").val(result);
+                });
+            });
+        </script>
+    </head>
+<body>
+    <form id="frmCalc">
+        <center>
+            First Number : 
+            <input type="number" name="firstNo" id="firstNo" /> <br/><br/>
+            Second Number : 
+            <input type="number" name="secondNo" id="secondNo" /> <br/><br/>
+            Result : 
+            <input type="number" name="result" id="result" /> <br/><br/>
+            <input type="button" value="Mult" id="mult" />
+        </center>
+    </form>
+</body>
+</html>

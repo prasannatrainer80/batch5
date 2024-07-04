@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+        <script>
+            $(document).ready(function() {
+                $("select").change(function() {
+                    // alert("Hi")
+                    var result="";
+                    $("select option:selected").each(function() {
+                        result += $(this).text() + " ";
+                        // alert(result);
+                    });
+                    $("div").text(result);
+                }).change();
+            });
+        </script>
+    </head>
+    <body>
+        <select id="names" name="names" multiple="multiple">
+            <option>Vinod</option>
+            <option>Aishwarya</option>
+            <option>Ammar</option>
+            <option>Lakshmi</option>
+            <option>Nagaraju</option>
+            <option>Pavan</option>
+        </select> <br/><br/>
+        Selected Names are : 
+        <b>
+            <div>
+
+            </div>
+        </b>
+    </body>
+</html>

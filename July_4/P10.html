@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+    <script>
+        $(document).ready(function () {
+            function calc() {
+                // alert("Hi");
+                var a = $("#firstNo").val();
+                var b = $("#secondNo").val();
+                var c = a * b;
+                //alert(c);
+                $("#result").val(c);
+            }
+
+            $('#firstNo, #secondNo').change(calc);
+        });
+    </script>
+    </head>
+<body>
+    <center>
+        First Number : 
+          <input type="number" name="firstNo" id="firstNo" /> 
+          <br/><br/>
+        Second Number : 
+           <input type="number" name="secondNo" id="secondNo" />
+           <br/><br/>
+        Result : 
+           <input type="number" name="result" id="result" />
+    </center>
+</body>    
+</html>

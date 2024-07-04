@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+        <script>
+            $(document).ready(function() {
+                $("#chkStatus").change(function() {
+                    if($("#chkStatus").prop("checked")) {
+                        $("#result").text("Present...");
+                    } else {
+                        $("#result").text("Absent...");
+                    }
+                })
+            });
+        </script>
+    </head>
+<body>
+    Status : 
+    <input type="checkbox" name="chkStatus" id="chkStatus" /> 
+    <br/><br/>
+    <span id="result"></span>
+</body>
+</html>

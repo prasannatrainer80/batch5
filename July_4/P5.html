@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+        <script>
+            $(document).ready(function() {
+                $("#b1").click(function() {
+                    var col = $("#col").val();
+                    document.bgColor = col;                    
+                });
+            })
+        </script>
+    </head>
+<body>
+    <form id="frmColor">
+        <center>
+            Enter Color : 
+            <input type="text" id="col" name="col" /> <br/><br/>
+            <input type="button" value="Change Color" id="b1" />
+        </center>
+    </form>
+</body>
+</html>
