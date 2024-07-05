@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css" />
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+    <link rel="stylesheet" href="http://resources/demos/style.css" />    <meta charset="utf-8" />
+    <script>
+        $(document).ready(function() {
+            $("#leaveStartDate").datepicker({minDate:0});
+            $("#leaveEndDate").datepicker({minDate:0});
+        });
+    </script>
+    <title></title>
+</head>
+<body>
+    Leave Start Date : 
+    <input type="text" id="leaveStartDate" /> <br/><br/>
+    Leave End Date : 
+    <input type="text" id="leaveEndDate" />  
+</body>
+</html>

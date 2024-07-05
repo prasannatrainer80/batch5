@@ -1,0 +1,36 @@
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css" />
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+    <link rel="stylesheet" href="http:/resources/demos/style.css" />
+    <script>
+        var urlNames = new Array();
+        $(document).ready(function() {
+            let url="https://jsonplaceholder.typicode.com/users";
+            fetch(url).then(res => res.json()).then(
+                out => {
+                    console.log(out);
+                    for(var v in out) {
+                        urlNames.push(out[v].id + " "+ 
+                            +out[v].name + " "
+                            +out[v].email + " "
+                            +out[v].username + " "
+                            +out[v].phone + " "
+                            +out[v].website);
+                    }
+                }
+            )
+            $("#tags").autocomplete({
+                source: urlNames
+          });
+        });
+    </script>
+</head>
+<body>
+    <center>
+        Enter Name  :
+        <input type="text" name="tags" id="tags" />
+    </center>
+</body>
+</html>
