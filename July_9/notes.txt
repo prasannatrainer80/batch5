@@ -1,0 +1,150 @@
+Increment/Decrement Operators : 
+________________________________
+
+
+++ and -- are known as unary or increment/decrement operators. 
+
+x=12;
+x++ // Its post increment, as in this first it initializes old value and then increments, so  
+		updated value will be taken place in next statement/operator. 
+
+++x // Its pre-increment, as in this first it increments the value and then assigns, so updated
+		value will be affected in same statement. 
+
+
+int x=12;
+int y= x++ + ++x;
+A 12 + 14
+M 13   14
+
+
+int x=10;
+int y = x++ + x++
+A  10 + 11
+M  11   12
+
+
+int x=13;
+int y = ++x + ++x
+A  14 + 15
+M  14   15
+
+
+int x=12;
+int y = x++ + ++x + x++;
+A 12 + 14 + 14
+M 13   14   15
+
+
+int x=10;
+int y = ++x + ++x + x--;
+
+A 11  +  12   + 12
+M 11     12     11
+
+
+int x = 11;
+int y = --x + x++ + ++x;
+A  10  + 10  + 12
+M  10    11    12
+
+
+int x=12;
+int y = ++x + x++ + ++x;
+A  13 + 13 + 15
+M  13   14   15
+
+int x = 15;
+int y = x++ + x++ + ++x;
+A   15  + 16  + 18
+M   16    17    18
+
+
+int x=12;
+int y = x++ + ++x + ++x + x++ - --x + x--;
+
+Access Modifiers : 
+__________________
+
+1) private  : Allows you to access members within current class. 
+
+2) public : Allows you to access members within entire application.
+
+3) protected : Allows you to access members within current/derived classes
+
+4) friendly : By default java possess friendly access modifier, allows you to access members within all classes of current package
+
+You can define a method in java as
+
+access_modifier return_type method_name(parameters) {
+...
+...
+...
+}
+
+You can create an object to the class, as 
+
+class_name obj = new class_name();
+
+
+Control Structures : 
+_____________________
+
+Used to define the flow of the program. There are 2 types of control structures known as
+
+1) Branching
+
+	if...else : Executes the statement(s) based on the condition. 
+
+		if (condition) {
+		   statement(s);
+		} else {
+		   statement(s);
+		}
+
+2) Looping 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
