@@ -1,0 +1,95 @@
+switch...case : Used to define the menu-driven programs. 
+
+switch(expression) {
+   case expression1 : statement(s);
+		      break;
+   case expression2 : statemenet(s);
+		      break;
+    ...
+    ...
+    ...
+}
+
+__________________________________________________________________________________________________
+
+What is yield : 
+
+Yield keyword lets us exists a switch expression by returning a value that becomes the value of switch expression.
+This means we can assign the value of a switch expression to a variable. 
+
+Lastly, by using yield in switch... we can get implicit check that we are covering all cases. 
+
+Looping Control Structures : 
+____________________________
+
+while loop : This loop executes all the statement(s) repeatedly until the condition remains true, if the condition remains false, then it comes out of the loop.  For every loop, basically there are 3 phases known as 
+
+	(i) Initialization
+
+	(ii) Condition
+
+	(iii) Increment/Decrement 
+
+Initialization performed at the beginning of the loop.
+
+Condition performed at the conditional part of the loop.
+
+Increment/Decrement performed before closing the loop.
+
+while(condition) {
+   statement(s);
+}
+
+
+for loop : This loop executes all the statement(s) repeatedly until the condition remains true,
+if the condition remains false, then it comes out of the loop.  
+
+for(initialization;condition;increment/decrement) {
+   statement(s);
+}
+
+
+1) Write a Program to implement sample current bill as take no.of units as input and calculate bill as
+
+first 90 units 1 rs per unit
+
+91 to 150 units 1.5 rs per unit
+
+151 to 200 units 2 rs per unit
+
+201 to 250 units 2.5 rs per unit
+
+251+ units 3rs per unit 
+
+for example : 
+
+If units are 180 then 
+
+(90*1) + (60 * 1.5) + (30 * 2) 
+
+
+2) Write a program to print prime numbers of given range
+
+3) Write a Program to check the given number is perfect or not 
+
+4) Write a Program to print pascal triangle 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
