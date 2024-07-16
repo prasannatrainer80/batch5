@@ -1,0 +1,62 @@
+Constructors 
+
+static concept
+
+inheritance
+
+super
+
+abstract class
+
+interfaces
+
+class starts in 5 mins
+
+__________________________________________________________
+
+static constructors are called class constructors, which are used to initialize e static variables of the class, These constructors are invoked automatically before control reaches the entry point. These constructors cannot be overloaded. 
+
+In java we don't have static constructor, as static { } acts as static constructor. 
+
+______________________________________________________________________
+
+static variables : These are the variables, that which retains values irrespective of type of object. These are class variables. 
+
+__________________________________________________________________________________________
+
+Inheritance : The concept of deriving a new class from already existing class known as inheritance, the class which derived known as derived class, the class from which its derived known as base class.  Through inheritance, we can reduce the size of the program. 
+
+class First {
+...
+...
+...
+}
+
+class Second extends First {
+...
+...
+...
+}
+
+Once you create an object to Second class, then you can access all public/protected and friendly members of base class. 
+
+
+
+super keyword : If you want to pass values from derived class to base class, then we need the help of super keyword. It has 2 forms as 
+
+	(i) super as a keyword
+
+	(ii) super as a constructor
+
+
+
+
+
+
+
+
+
+
+
+
+
