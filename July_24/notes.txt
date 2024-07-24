@@ -1,0 +1,20 @@
+interfaces : Java does not support the concept of multiple inheritance, to achieve this we need the help of interfaces. An interface contains method declaration, and the implementation can be done in the corresponding class. You can add more than one interface to the particular class. 
+
+Difference between interface and abstract class 
+_________________________________________________
+
+(I) An abstract class contains both abstract and non-abstract methods, where interface contains only
+	abstract methods.
+
+(ii) Interface methods are public and abstract by default. 
+
+(iii) Multiple Inheritance can be achieved by using interfaces
+
+(iv) An interface can be called from anywhere to anywhere. 
+
+interface interface_name
+{
+    method1();
+    method2();
+}
+
