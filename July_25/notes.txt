@@ -1,0 +1,75 @@
+Collections : 
+______________
+
+
+Arrays are static data structures, means once they are assigned we cannot alter the size, 
+so if you want to add the elements irrespective of size, then we need the help of collections. 
+
+Collections can grow to any size unlike arrays. 
+
+Collections are basically from java.util package. 
+
+Scanner class : This class allows you to read the data from keyboard/file etc...
+
+How to read the data from keyboard is 
+
+Scanner sc = new Scanner(System.in);
+
+next() -> Used to read one word from keyboard. 
+
+nextLine() -> Used to read entire sentence
+
+nextInt() -> Used to read integer value
+
+nextDouble() -> Used to read double value
+
+nextBoolean() -> Used to read Boolean value. 
+
+Properties : Provides an opportunity to protect a field in a class. If you want to control the internal behaviour of particular entity, then we need the help of properties. Properties are also known as methods, which are used to value type operations.
+
+Collections by default stores data in Object format. 
+
+There are various types of properties known as 
+
+1) Read Only
+
+2) Write Only
+
+3) ReadWrite 
+
+
+In Collections we have top 3 interfaces available known as 
+
+(i) List interface : Contains list of values for particular entity.  In this interface we have ArrayList, LinkedList, Vector 
+
+(ii) Set interface
+
+(iii) SortedSet interface
+
+Collections contains wrapper classes, ensures primitive data type classes as
+
+values to be stored in object format 
+
+Example : 
+
+int x=12;
+
+there x is a variable. 
+
+Integer x = new Integer(12);
+
+This is known as Wrapper class. 
+
+as 12 will be stored as an object format. 
+
+
+Vector allows you to define default size. and it increments as specified.
+
+Vector vector = new Vector(3,2);
+
+Initially it allocates memory for 3 elements, when 4th element comes, then it adds 2 more elements into that. 
+
+
+
+
+
