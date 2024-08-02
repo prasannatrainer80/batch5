@@ -1,0 +1,32 @@
+1) Create a class as Student with attributes (sid int, sname String, city String, cgp double) 
+
+    Add 10 records and Sort them 
+	By Namewise Descending Order
+
+	By cgp wise ascending order
+
+2) Same Code add duplicate Student Records and Delete them
+
+3) Convert List<Student> to Student[] and print them (Convert Generic List into Student Array) 
+
+4) Create an abstract class called Training and in that add 2 abstract methods as 
+		abstract void timing(); abstract void trainer();
+
+	For that create 3 child classes as DotnetTraining, JavaTraining, SqlTraining 
+
+	and add mix of class objects to Training[] as 
+
+	Training[] arr = new Training[] {
+		new DotnetTraining(), new JavaTraining(), new SqlTraining()....
+
+	};
+
+In that please print only JavaTraining object details 
+
+5) Write a code to create map interface with HashTable and add 10 records as
+
+	Map<String,Double> map = new HashTable<String,Double>();
+
+Add 10 records and iterate them. 
+
+Check will it take duplicate keys or duplicate values and write your observations in program comments
