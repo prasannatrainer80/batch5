@@ -1,0 +1,90 @@
+Generics provides an opportunity to pass or define data types at runtime. If you want to make any method as write once and 
+apply for all types, then we need the help of generics. 
+
+Generics can be represented by using <T> notation. Means, in place of <T> we can pass any
+value type or reference type or custom type. 
+
+Advantages : 
+_____________
+
+(i) Write once and apply for all types
+
+(ii) provides security to data
+
+(iii) No Typecasting required
+
+(iv) Reduces the size of the program. 
+
+
+Exception Handling is a mechanism of handling the runtime errors during execution 
+of the program. 
+
+There are 2 types of errors known as 
+
+(i) Compile Time
+
+(ii) Runtime 
+
+
+Runtime errors occurs, during runtime if we pass invalid values, the type of errors we are getting known as runtime errors. 
+By using exception handling, we can overcome runtime errors. 
+
+To handle exceptions, we have 3 blocks known as
+
+1) try block : This block contains statements, in which there is possibility of getting runtime errors, the statements which are placed in this block are treated as heavy weighted statement(s) as JVM allocates excess memory to them. 
+
+2) catch block : Once Exception raised in try block, then the control will be forwarded to catch block, this block contains alternate statement(s) for exceptions raised in try block.  One try block contains multiple catch blocks. 
+
+3) finally block : This block contains statement(s) that needs to be executed mandatorily irrespective of try and catch blocks, This block is not mandatory, but all the statement(s) which are placed in this block are executed as mandatory statement(s)
+
+Exception is the top most class, from which all kinds of exceptions are derived. 
+
+try {
+...
+...
+} catch(Exception e) {
+...
+...
+} finally {
+...
+...
+...
+}
+
+printStackTrace() : This method contains end to end information about errors. like Error Message, Exception Class, Line No. Char pos
+
+There are 2 types of exceptions known as 
+
+(i) Checked Exceptions  : These are the exceptions that which occurs at compile time, during execution JVM feels some erroneous code is there and stops the execution at compile time, can be handled at method level by using throws keyword. 
+
+(ii) Unchecked Exceptions : These are the exceptions that which occurs at runtime can be handled by using try...catch blocks. 
+
+System Exceptions are inadequate to handle in all situations, to overcome this we need the help of custom exceptions.  Any class, that which derived from Exception can be treated as Custom Exception. 
+
+class class_name extends Exception {
+...
+...
+...
+}
+
+Write a Program to accept age and check he/she eligible for voting or not  if not throw UserDefine Exception called VotingException
+
+Write a Program to read 2 numbers and print the sum, if any number  = 0 then throw NumberZeroException, if any number < 0 then
+throw NegativeException else print the sum. 
+
+Write a Program to accept email and check if '@' is missing then throw InvalidEmailException, now the username contains from 8 to 13 characters then only allow, else print InvalidUserException. 
+
+Example : hemanth123@gmail.com
+
+else print email. 
+
+
+
+
+
+
+
+
+
+
+

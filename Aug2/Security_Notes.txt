@@ -1,0 +1,78 @@
+Spring Security : 
+
+It is a powerful and highly customizable authentication access management system.  This is standard for protecteing spring based applications. 
+
+It focuses on authentication and authorization for java applications and restful services. 
+
+Spring Security is robust framework, designed to provide capabilities such as
+authorization, authentication, break down all security mechanisms.
+
+1) Authencation
+
+Authentication is a process in which verifying that the user or system is human. 
+
+Need to provide credentials before accessing expected resource. 
+
+There are various types of Authentication mechanisms known as
+
+In-Memory Authentication : Useful for testing small apps where users and their roles are defined in application memory. 
+
+JDBC Authentication : Uses the database to store user details and roles for the application. 
+
+LDAP Authentication : Light weight Directory Access Protocol (LDAP) such as Microsoft active directory or spring applications. 
+
+OAuth2 : For modern applications requiring integration with OAuth2 providers like Google, FaceBook, GitHub or other corporate authentication systems.
+
+Custom Authentication : For unique authentication needs not covered by built-in providers. 
+
+we need to use predefined method called authenticate() to access the particular resource
+
+2) Authorization : 
+
+Determines what operations allowed to the authenticated user.  It addresses a question, What are you allowed to do 
+
+It has various roles as ROLE_USER or ROLE_ADMIN or more complex access control logic in spring application. 
+
+Spring Authorization handles 2 authorization levels known as 
+
+-> Web Security : This involves in configuring access to HTTP URLs Spring Security provides option to restrict access based on URL patterns. Http Methods, and authority checks. 
+
+-> Method Security : This protects service layer operations based on annotations such as @PreAuthorize, @PostAuthorize, @Secure,
+@RoleBased 
+
+This security mandatory for protect against attacks. 
+
+What kind of protections we need to provide for Security is 
+
+CSRF (Cross-Site Request Forgery) : It is default in web applications, it ensures that only forms originating from the application can be used to post data back. 
+
+XSS (Cross-Site Scripting) : Handled by properly encoding data on the client side. Spring Security integrates with headers that instruct the browser to execute script s only from the trusted resources. 
+
+CORS : Cross-Origin Resource Sharing : Spring Security can be configured to control which domains are allowed to access the resources, which is essential for APIs consumed by different domain frontends. 
+
+4) Filter Chain : 
+
+Responsible for carrying out security process. When a request is made, it goes through series of filters, each designed to perform specific task, 
+
+	-> Authentication Filters  : These filters are authenticate credentials submitted with requests. 
+
+	-> Management Filters : w.r.t Session and other security headers
+
+	-> Access Control Filters : They decide if the request can be proceed to the resources. 
+
+How to Specify the PasswordEncoder in SpringBoot Appliation : 
+
+You can simply prefix with {noop} to your passwords in order to implement DelegatingPasswordEncoder
+
+NoOpPasswordEncore to validate 
+
+We resume by 11.05
+
+
+
+
+
+
+
+ 
+
