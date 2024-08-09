@@ -1,0 +1,34 @@
+LeaveDetails.java
+___________________
+
+ leaveId  (int)
+ empId (int)
+ leaveStartDate (utilDate)
+ leaveEndDate (utilDate)
+ noOfDays (int)
+ appliedOn (utilDate)
+ leaveType (ENUM (EL,PL,ML)
+ leaveStatus (ENUM (ACCEPTED, REJECTED, PENDING)
+ leaveReason (String)
+
+
+1) Add Leave
+2) Show Leaves
+3) Update Leave
+4) Search Leave
+5) Delete Leave
+
+1) leaveId to be incremented automatically 
+2) noOfDays to be calculated automatically example : Applied form Aug 19 to 21 means
+4 days leave
+
+3) appliedOn will be default today's date.
+
+Validations : 
+______________
+
+1) LeaveStartDate cannot be yesterday's date
+
+2) LeaveEndDate cannot be yesterday's date
+
+3) LeaveStartDate cannot be greater than LeaveEndDate  then only add/update records
