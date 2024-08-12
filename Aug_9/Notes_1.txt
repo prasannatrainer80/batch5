@@ -1,0 +1,35 @@
+Fault Tolerance
+
+Web Flux Reactive Programming (Spring WebFlux)
+
+Spring WebFlux with Database MySQL
+
+Spring WebFlux with Database MongoDb
+
+_____________________________________________________________________________________________
+
+Fault Tolerance : 
+_________________
+
+	Microservices must be extremely reliable because they depend on each other.  
+The microservice architecture contains lot of small microservices.  These communicates with 
+each other for their purpose. 
+
+The instance of microservices may go up and down frequently. As the no.of interactions between 
+microservices increases, the chances of failure of microservice also increases in the system. 
+
+This scenario can be handled by concept called Fault Tolerance. 
+
+So, Fault Tolerance can be achieved with the help of a circuit breaker.  It is a pattern that wraps the requests to external services, 
+and detects when they fail. If the failure detected, the circuit breaker opens, all the subsequent requests immediately return an error instead of making request to the unhealthy service.  It monitors and detects the service which is down and misbehaves with other services.  It rejects call until it becomes healthy again. 
+
+You can achieve the Fault Tolerance using Hystrix library. 
+
+It is a library that controls the interaction between microservices to provide latency and fault tolerance. It makes sure to modify the UI to let the user to known that something might not have worked as expected. 
+
+To enable the framework, we need to use @EnableHystrix 
+
+The method for which we need to apply exception
+
+@HystrixCommand and the method to be specified in property called fallbackMethod. 
+

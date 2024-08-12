@@ -1,0 +1,119 @@
+What is Reactive Programming :
+_____________________________
+
+It is a mechanism that promotes an asynchronous, non-blocks and event-driven approach to data processing. 
+
+It involves in modeling data and events as observable data streams an implementing
+data processing routines to react to the changes in those streams. 
+
+What is observable data.
+
+Whenever you consume any services, it omit 2 promise values known as 
+
+Resolve and Reject 
+
+Resolve -> If the request served successfully knonw as Resolve
+
+Reject -> If the request failed then alternate statements. 
+
+now sometimes based on the request, we need to cancel the services, 
+
+that also will be possible by using observable data. 
+
+So, above mechanism not implementing in traditional spring boot restful services
+
+so, here we have the concept called Spring Web Flux Reactive Programming, that 
+which allows you to implement those. 
+
+
+Advantages of reactive programming : 
+______________________________________
+
+
+1) Blocking (vs) Non-Blocing request processing (async req processing)
+
+Blocking Request Processing : 
+
+In traditional MVC applications, a new servlet thread is created when a request comes from server. 
+
+It delegates the request to worker threads for IO operations such as db access and all
+
+during the is time if threds are busy it will be waited and blocked state. it is called asynchronous programming 
+
+But in asynchronous programming, no thread is in waiting state, there is generally only one request thread receiving the request. 
+
+All incoming requests come with an event bandler, It delegates the incoming requests to the thread pool. which delegates the request to its handler functions and immediately starts processing other incoming rewquests from the request thread. 
+
+Reactive programming fully depend on Publisher-Subscriber design pattern. 
+
+Reative streams API was created by Netflix, it defines 4 interaces. 
+
+public interface Publisher<T> {
+   public void subscribe(Subscirber< T>s);
+}
+
+Subscriber.java
+
+public interface Subscriber<T> {
+    void onSubscribe(Subscription s);
+    void onNext(T t);
+    void onError(Throwable T);
+    public void onComplete();
+}
+
+Spring WebFlux is a parallel version of Spring MVC and supports fully non-blockig reactive streams. 
+
+Spring WebFlux supports two publishers 
+
+Mono : Returns 0 or 1 element
+
+Mono<String> obj = Mono.just("Srinath");
+
+Mono<String> res = Mono.empty();
+
+Flux : Returns 0...N elements, Flux can be endless, means that it can keep emitting elements forever. 
+
+Flux<String> arra = Flux.just("A","B","C");
+
+You can fire that method by using subscribe();
+
+array.subscribe();
+
+
+Got struck in some work as repair work going on at home give me max 10 mins and i will start
+
+_____________________________________________________________________________
+
+1) What is Reactive Programming 
+
+	-> Allows you to implement non-blocking asynchrous services to be implemented
+	Spring Supports Reactive Programming
+
+	That can be achieved by using Flux. 
+
+It involves in modeling data and events as observable data streams an implementing
+data processing routines to react to the changes in those streams. 
+
+What is observable data.
+
+	When you send any request to server, it responds with 2 promise values known as
+
+	(i) resolve
+	
+	(ii) reject
+
+resolve ensures any successful service invocation
+
+reject ensures any error message. 
+
+
+
+
+
+
+
+
+
+
+
+
