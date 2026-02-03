@@ -75,6 +75,20 @@ If units are 180 then
 4) Write a Program to print pascal triangle 
 
 
+Write a program using Switch...Case and Yield as 
+
+accept salary and deduct tds and return takeHome Base on ITR Name (
+
+ITR's as ITR1, ITR2, ITR3, ITR4 
+
+
+
+Example if salary <= 20000 no tds if ITR = ITR4
+
+return  10% tds if ITR =ITR1, ITR2, ITR3
+
+
+
 
 
 
